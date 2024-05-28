@@ -1,9 +1,12 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import { useRouter } from "next/router";
 
-
-import { Container, Inner, LogoImage, NavMenu, StyledLink, 
-  Banner, BannerImg, TestName, SelectBox, SelectToggle, 
-  TestType, TestButton, TestTypeHover, 
+import { Container, Nav, LogoImage, NavMenu, StyledLink, 
+  Banner, TestName, SelectToggle, 
+  TestType, ToggleIcon, TestButton, 
   SearchTest, SearchImage, SearchInput, TestBox } 
   from "../../styles/emotion";
 
@@ -11,12 +14,19 @@ import { Container, Inner, LogoImage, NavMenu, StyledLink,
 
 export default function WizMain() {
 
-  
-
+  var settings = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  }
   return (
     <Container>
       {/* 메뉴 바 */}
-      <Inner>
+      <Nav>
         <a href="#"><LogoImage src="/img/logo.png" alt="WIZ" /></a>
         <SearchTest>
           <SearchImage src="/img/search.svg" alt="" />
@@ -26,27 +36,42 @@ export default function WizMain() {
           <StyledLink href="./mypage.html" className="test">마이 페이지</StyledLink>
           <StyledLink href="./login.html" className="login">로그인</StyledLink>
         </NavMenu>
-      </Inner>
+      </Nav>
       <Banner>
-        <BannerImg src="img/image1.jpg" alt="" />
+        <Slider {...settings}>
+          <div>
+            <img src="img/image01.png" alt="" />
+          </div>
+          <div>
+            <img src="img/image02.png" alt="" />
+          </div>
+          <div>
+            <img src="img/image03.png" alt="" />
+          </div>
+          <div>
+            <img src="img/image04.png" alt="" />
+          </div>
+        </Slider>
       </Banner>
       <TestName id="test__name">전체</TestName>
-      <SelectBox>
         <SelectToggle>
           <TestType>
+            <ToggleIcon src="img/fire.png" alt="fire" />
             <TestButton>인기 순</TestButton>
           </TestType>
           <TestType>
+            <ToggleIcon src="img/test.png" alt="test" />
             <TestButton>종류</TestButton>
           </TestType>
           <TestType>
+            <ToggleIcon src="img/star.png" alt="star" />
             <TestButton>난이도</TestButton>
           </TestType>
           <TestType>
-            <TestButton>주제</TestButton>
+            <ToggleIcon src="img/plant.png" alt="plant" />
+            <TestButton>입문용</TestButton>
           </TestType>
         </SelectToggle>
-      </SelectBox>
       <TestBox>테스트 사이트 박스들</TestBox>
     </Container>
   );

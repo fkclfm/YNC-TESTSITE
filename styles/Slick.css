@@ -1,0 +1,13 @@
+.slick-slide {
+  height: 320px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.slick-slide img {
+  object-fit: contain;
+  height: 500px;
+  width: 100%;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
