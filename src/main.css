@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  font-family: 'SpoqaHanSansNeo-Regular';
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+a {
+  color: black;
+}
+button {
+  border: 0;
+  background-color: transparent;
+}
+input {
+  border: 0;
+  background-color: transparent;
+  &:focus {
+    outline: none;
+  }
+}
