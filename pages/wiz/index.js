@@ -2,17 +2,17 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import { useRouter } from "next/router";
 
 import { Container, Nav, LogoImage, NavMenu, StyledLink, 
   Banner, TestName, SelectToggle, 
   TestType, ToggleIcon, TestButton, 
   SearchTest, SearchImage, SearchInput, TestBox } 
-  from "../../styles/emotion";
+  from "../../styles/main";
 
 
 
 export default function WizMain() {
+
 
   var settings = {
     dots: false,
@@ -33,8 +33,9 @@ export default function WizMain() {
           <SearchInput className="search__input" placeholder="테스트 제목, 내용을 검색해보세요" />
         </SearchTest>
         <NavMenu>
-          <StyledLink href="./mypage.html" className="test">마이 페이지</StyledLink>
-          <StyledLink href="./login.html" className="login">로그인</StyledLink>
+          
+          <StyledLink className="test" href="./mypage">마이 페이지</StyledLink>
+          <StyledLink className="login" href="./login">로그인</StyledLink>
         </NavMenu>
       </Nav>
       <Banner>

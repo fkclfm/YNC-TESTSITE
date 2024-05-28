@@ -1,3 +1,7 @@
+.slick-list {
+  border-radius: 20px;
+}
+
 .slick-slide {
   height: 320px;
   box-sizing: border-box;

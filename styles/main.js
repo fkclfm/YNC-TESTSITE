@@ -32,6 +32,7 @@ export const StyledLink = styled.a`
   font-weight: 700;
   font-size: 20px;
   color: black;
+  cursor: pointer;
   text-decoration: none;
 `;
 
@@ -59,6 +60,7 @@ export const SelectToggle = styled.div`
   gap: 15px;
   font-size: 15px;
   font-weight: 700;
+  margin-top: 5rem;
   margin-bottom: 80px;
 `;
 
