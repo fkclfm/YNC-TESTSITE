@@ -33,8 +33,8 @@ export default function WizMain() {
           <SearchInput className="search__input" placeholder="테스트 제목, 내용을 검색해보세요" />
         </SearchTest>
         <NavMenu>
-          
-          <StyledLink className="test" href="./mypage">마이 페이지</StyledLink>
+          <StyledLink className="test" href="./test">테스트 하러 가기</StyledLink>
+          <StyledLink className="mypage" href="./mypage">마이 페이지</StyledLink>
           <StyledLink className="login" href="./login">로그인</StyledLink>
         </NavMenu>
       </Nav>
