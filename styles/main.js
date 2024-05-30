@@ -6,9 +6,9 @@ export const Container = styled.div`
   padding: 0 110px;
 `;
 
-export const Inner = styled.nav`
+export const Nav = styled.nav`
   height: 90px;
-  padding: 20px;
+  padding: 0 110px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -24,89 +24,78 @@ export const NavMenu = styled.div`
   height: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
 `;
 
 export const StyledLink = styled.a`
   font-weight: 700;
-  font-size: 19px;
+  font-size: 20px;
   color: black;
+  cursor: pointer;
   text-decoration: none;
 `;
 
 export const Banner = styled.section`
-  height: 300px;
+  width: 90%;
+  height: 500px;
   border-radius: 10px;
   margin-bottom: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
 `;
 
-export const BannerImg = styled.img`
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-`
 export const TestName = styled.h2`
   font-weight: 700;
   padding-left: 100px;
   margin-bottom: 20px;
 `;
 
-export const SelectBox = styled.div`
-  height: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 80px;
-`;
-
 export const SelectToggle = styled.div`
-  width: 50%;
+  width: 100%;
   height: 35px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   font-size: 15px;
   font-weight: 700;
+  margin-top: 5rem;
+  margin-bottom: 80px;
 `;
 
 export const TestType = styled.div`
-  width: 150px;
-  height: 35px;
+  width: 130px;
+  height: 120px;
   background-color: aqua;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
+  flex-direction: column;
   justify-content: center;  
   align-items: center;
+  gap: 13px;
   background-color: white;
-  border: 1px solid #e3e3e3;
-  padding: 15px 0;
+  border: 1px solid #d2d2d2;
   cursor: pointer;
   opacity: 0.7;
 `;
 
-export const TestButton = styled.button`
+export const ToggleIcon = styled.img`
+  width: 50px;
+  height: 45px;
+`
+
+export const TestButton = styled.a`
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
 `;
 
-export const TestTypeHover = styled(TestType)`
-  &:hover {
-    opacity: 1;
-  }
-`;
 
 export const SearchTest = styled.div`
   background-color: #e9ecef;
   border-radius: 20px;
-  width: 40%;
+  width: 45%;
   height: 35px;
   padding: 20px 0;
   display: flex;
